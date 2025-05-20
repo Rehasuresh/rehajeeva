@@ -1,0 +1,241 @@
+body {
+    font-family: 'Roboto', sans-serif;
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.displaynone{
+    display: none !important;
+}
+.Active{
+    display: flex !important;
+}
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 44px;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.nav-bar .left-cont{
+    display: flex;
+    align-items: center;
+}
+.nav-bar .left-cont span{
+    margin: 0 10px;
+    font-size: 16px;
+    color: #fff;
+}
+.nav-bar .left-cont i{
+    font-size: 16px;
+    color: #fff;
+    line-height: 20px;
+    width: 22px;
+}
+.nav-bar .left-cont svg{
+    color: #fff;
+    font-size: 12px;
+    margin-right: 5px;
+}
+.nav-bar .left-cont p, .nav-bar .left-cont a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+}
+.nav-bar .right-cont svg{
+    border-color: #133d66;
+    border-radius: 4px;
+    width: 25px;
+    height: 25px;
+}
+.nav-bar .right-cont svg path{
+    fill: #fff;
+}
+nav{
+    background-color: #a58a47;
+}
+header{
+    background-color: #ffffff;
+}
+.nav-cont{
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.body-container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.d-flex-align-center{
+    display: flex;
+    align-items: center;
+}
+.body-right{
+    padding-left: 80px;
+    width: 50%;
+}
+.logo .brand-name:not(.brand-name span){
+    font-weight: 900;
+    font-size: 22px;
+    color: #133d66;
+    padding-left: 10px;
+    display: flex ;
+    flex-direction: column;
+}
+.logo .brand-name span{
+ margin-right: 3px;
+}
+.logo{
+    display: flex;
+    max-width: 100%;
+    max-height: 100%;
+    align-items: center;
+}
+.logo img{width: 45px;}
+.nav-cont .nav-list{
+    display: flex;
+}
+.nav-cont{
+    padding: 20px 0;
+}
+.nav-cont .nav-list li{
+    padding: 10px 20px;
+    list-style: none;
+    color: #133d66;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.nav-cont .nav-list li:hover, .nav-cont .nav-list li.active{
+    background-color: #a58a47;
+    border-top: 2px solid #133d66;
+    color: #fff;
+}
+.body-container .body-cont{
+    display: flex;
+}
+.body-container .home-cont{
+        width: 100%;
+}
+.body-container .home-cont p{
+    font-size: 20px;
+    font-weight: normal;
+    font-size: 22px;
+    text-align: justify;
+    font-weight: 900;
+    color: #133d66;
+}
+main{
+    background-color: #f5f3e2;
+}
+.body-container .services ul li{
+    font-size: 20px;
+    font-weight: normal;
+    color: #133d66;
+    padding: 12px 0;
+   
+}   
+.body-container .body-left img{
+    height: 560px;
+    width: 100%;
+} 
+
+.body-container .services ul{
+    padding-left: 20px;
+}
+.body-container .services h3, .body-container .contact h3{
+    color: #133d66;
+    padding: 20px 0;
+    font-size: 30px;
+}
+.body-container .services {
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    width: 100%;
+}
+#contact form input{
+    height: 40px;
+    border: none;
+    border-radius: 2px;
+    font-size: 16px;
+    width: 100%;
+    margin: 5px 0 20px 0;
+    padding: 10px;
+}
+
+#contact form label{
+    color: #133d66;
+}
+#contact .body-right{
+    width: 70%;
+}
+input:focus-visible, textarea:focus-visible{
+    outline: 1px solid #133d66;
+}
+input:focus, textarea:focus {
+  box-shadow: 1px 1px 6px #133d66;
+}
+#contact form textarea{
+    height: 80px;
+    border: none;
+    border-radius: 2px;
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    resize: vertical;
+}
+#contact form button{
+    background-color: #133d66;
+    color: #fff;
+    padding: 15px;
+    cursor: pointer;
+    border-color: #133d66;
+    border-radius: 2px;
+}
+#contact form button:hover{
+    background-color: #1d5a97;
+}
+.mb-5{
+    margin-bottom: 5px;
+}
+.d-block{
+    display: block;
+}
+.msg-btn{
+    margin: 15px 0;
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#client .client-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 108px;
+    height: 560px;
+}
+#client .client-cont .cont-box{
+    width: 320px;
+    height: 320px;
+    color: #133d66;
+    /* box-shadow: 1px 1px 6px #e9d7a9; */
+     box-shadow:    inset 0 -3em 3em #a58a47,
+    0 0 0 2px #a58a47,
+    0.3em 0.3em 1em #133d66;
+    padding: 15px;
+}
+#client .client-cont .cont-box .cl-head{
+    text-align: center;
+    padding: 10px 0 25px 0;
+    color: #133d66;
+}
+#client .client-cont .cont-box{
+    text-align: center;
+}
+ 

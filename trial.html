@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trial Project</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+    <nav>
+        <div class="nav-bar">
+            <div class="left-cont">
+            <i class="material-icons">emails</i>
+            <a>info@myagency.co.uk</a><span>|</span></a>
+            <i class='fas fa-phone-alt'></i>
+            <p>9878654327</p>
+            </div>
+            <div class="right-cont">
+                <i class='fab fa-facebook-square'></i>
+                <i class='fab fa-linkedin'></i>
+                <i class='fab fa-twitter-square'></i>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="nav-cont">
+        <div class="logo">
+            <img src="./Image/logo.jpeg" alt="logo">
+             <!-- <link rel="icon" href="E:\London\project base model final\New Project\Image\logo.jpeg"> -->
+            <p class="brand-name">HARRISON AND ASSOCIATES</span></p>
+        </div>
+        <ul class="nav-list">
+            <li class="nav-link active" onclick="showPage('home', this)">Home</li>
+            <li class="nav-link" onclick="showPage('service', this)">Services</li>
+            <li class="nav-link" onclick="showPage('client', this)">Client</li>
+            <li class="nav-link" onclick="showPage('contact', this)">Contact</li>
+        </ul>
+    </div>
+    </header>
+    <main>
+        <div class="body-container">
+            <div class="body-cont displaynone Active" id="home">
+                <div class="body-left">
+                    <img src="./Image/main.jpg" alt="court imgae">
+                </div>
+                <div class="body-right d-flex-align-center">
+                    <div class="home-cont">
+                        <p>"we specialize in providing reliable, efficient, and confidential process- serving solutions across
+                            the UK. Our expert team of process servers ensures that legal documents are served with precision, in accordance
+                            with all UK legal guidelines and regulation".</p>
+                    </div>
+                    
+                </div>
+                
+            </div>
+
+            <div class="body-cont displaynone" id="service">
+                <div class="body-left">
+                    <img src="./Image/servi.jpg" alt="court imgae">
+                </div>
+                <div class="body-right d-flex-align-center">
+                    <div class="home-cont">
+                        <div class="services">
+                            <h3>Services</h3>
+                            <ul>
+                                <li>Experienced & Professional team</li>
+                                <li>Comprehensive process serving Solutions</li>
+                                <li>Rapid and reliable delivery</li>
+                                <li>Nationwide coverage</li>
+                                <li>Discreet and confidential service</li>
+                                <li>Competitive pricing</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div class="body-cont displaynone" id="contact">
+                <div class="body-left">
+                    <img src="./Image/client.jpg" alt="court imgae">
+                </div>
+                <div class="body-right d-flex-align-center">
+                    <div class="home-cont">
+                        <div class="contact">
+                            <h3>Contact</h3>
+
+                            <form target="_blank" action="https://formsubmit.co/rehasurey87@gmail.com" method="POST">
+                            <!-- <form action="https://formspree.io/f/xdkgbzlb" method="POST">  -->
+                            <label for="fname" class="d-block">NAME</label>
+                            <input type="text" name="name" placeholder="Full Name" required>
+                            <label for="email" class="d-block">EMAIL</label>
+                            <input type="email" name="email" placeholder="Email" required>
+                            <label for="mobile" class="d-block">PHONE NUMBER</label>
+                            <input type="mobile" name="mobile" placeholder="Phone Number" required>
+                            <label for="subject" class="d-block">SUBJECT</label>
+                            <input type="text" name="subject" placeholder="Subject" value="">
+                            <label for="message" class="mb-5 d-block">Message</label>
+                            <textarea name="message" placeholder="Message" required></textarea>
+                            <input type="hidden" name="_template" value="table">
+                            <input type="hidden" name="_url" value="https://formsubmit.co/rehasurey87@gmail.com">
+                            <input type="hidden" name="_cc" value="rehasuresh.plsql@gmail.com,jlivingstonmba@yahoo.co.uk">
+                            <input type="text" name="_honey" style="display:none">
+                            <!-- <input type="hidden" name="_next" value="file:///E:/London/project%20base%20model%20final/New%20Project/trial.html"> -->
+                            <div class="center msg-btn">
+                                <button type="submit">SUBMIT MESSAGE</button>
+                            </div>
+                            
+                            </form> 
+
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+
+             <div class="body-cont displaynone" id="client">
+                <div class="">
+                    <!-- <img src="./Image/main.jpg" alt="court imgae"> -->
+                    <div class="client-cont">
+                        <div class="cont-box">
+                            <div class="cl-head">
+                                <h3>Local Authority</h3>
+                            </div>
+                            <p>Local authority law governs the powers and responsibilities of local governments, including zoning, building regulations, and land use</p>
+                        </div>
+                        <div class="cont-box">
+                            <div class="cl-head">
+                                <h3>Law Firms</h3>
+                            </div>
+                            <p>Law firms play a key role in advising both local authorities and property owners, helping navigate disputes, compliance issues, and property transactions. Understanding the legal framework is essential for all parties to ensure responsible development and protection of property rights.</p>
+                        </div>
+                        <div class="cont-box">
+                            <div class="cl-head">
+                                <h3>Property Owner</h3>
+                            </div>
+                            <p>These laws directly affect property owners, who must comply with planning permissions, maintenance standards, and environmental regulations.</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+
+        </div>
+    </main>
+</div>
+
+<script>
+    function showPage(pageId, clickedLink) {
+      // Hide all pages
+      document.querySelectorAll('.displaynone').forEach(displaynone => {
+        displaynone.classList.remove('Active');
+      });
+      // Show the selected page
+      document.getElementById(pageId).classList.add('Active');
+
+      document.querySelectorAll('.nav-link').forEach(link => {
+    link.classList.remove('active');
+  });
+
+  // Add 'active' class to clicked link
+  clickedLink.classList.add('active');
+    }
+  </script>
+</body>
+</html>

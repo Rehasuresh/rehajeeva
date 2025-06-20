@@ -16,7 +16,7 @@
         <div class="nav-bar">
             <div class="left-cont">
             <i class="material-icons">emails</i>
-            <a>xxxxxxxxx.co.uk.</a><span>|</span></a>
+            <a>harrisonassociatesservices@gmail.com</a><span>|</span></a>
             <i class='fas fa-phone-alt'></i>
             <p>9878654327</p>
             </div>
@@ -30,7 +30,7 @@
     <header>
         <div class="nav-cont">
         <div class="logo">
-            <img src="./Image/logo3.JPG" alt="logo">
+            <img src="./Image/logo3.jpg" alt="logo">
              <!-- <link rel="icon" href="E:\London\project base model final\New Project\Image\logo.jpeg"> -->
             <p class="brand-name">HARRISON & ASSOCIATES</span></p>
         </div>
@@ -97,25 +97,24 @@
                         <div class="contact">
                             <h3>Use the form below to tell us about your legal inquiry, and we'll call you back to schedule an appointment.</h3>
 
-                            <form target="_blank" action="https://formsubmit.co/rehasurey87@gmail.com" method="POST">
-                            <!-- <form action="https://formspree.io/f/xdkgbzlb" method="POST">  -->
-                            
+                            <form  target="_self" action="https://formsubmit.co/harrisonassociatesservices@gmail.com" method="POST" >
+                                <!-- <form  target="_self" action="https://formsubmit.co/rehasurey87@gmail.com" method="POST" > -->
                                 <label class="d-block pb-10"></label>
                                 <div class="form-flex">
                                     
                                     <div class="form-cont">
                                             <label for="fname" class="d-block fs-14">First Name(*)</label>
-                                            <input type="text" name="First Name" placeholder="Full Name" required>
+                                            <input type="text" id="fname" name="First&nbsp;Name" placeholder="Full Name" required>
                                             </div>
                                             <div class="form-cont">
                                             <label for="email" class="d-block fs-14">Last Name(*)</label>
-                                            <input type="text" name="Last Name" placeholder="Last Name" required>
+                                            <input type="text" id="lname" name="Last&nbsp;Name" placeholder="Last Name" required>
                                             </div>
                                 </div>
                             <label for="email" class="d-block">Email Address (required)(*)</label>
-                            <input type="email" name="Email" placeholder="Email" required>
+                            <input type="email" id="email" name="Email" placeholder="Email" required>
                             <label for="mobile" class="d-block">Phone Number(*)</label>
-                            <input type="mobile" name="Mobile" placeholder="Phone Number" required>
+                            <input type="mobile" id="mobile" name="Mobile" placeholder="Phone Number" required>
                             <!-- <label for="subject" class="d-block">SUBJECT</label>
                             <input type="text" name="subject" placeholder="Subject" value=""> -->
 
@@ -123,23 +122,23 @@
                           
                            <div class="check-box">
                                 <div>
-                                <input type="checkbox" id="chkbox1"  name="Process Serving" value="Yes" onclick="checkboxclick()"> 
+                                <input type="checkbox" id="chkbox1"  name="Process&nbsp;Serving" value="Yes" onclick="checkboxclick()"> 
                                 <span>Process Serving</span>  
                                 </div>
                                 <div>
-                                <input type="checkbox" id="chkbox2" name="Commercial Forfeiture" value="Yes"  onclick="checkboxclick()">
+                                <input type="checkbox" id="chkbox2" name="Commercial&nbsp;Forfeiture" value="Yes"  onclick="checkboxclick()">
                                 <span>Commercial Forfeiture</span>  
                                 </div>
                                 <div>
-                                <input type="checkbox" id="chkbox3"  name="Commercial Rent Arrears Recovery (CRAR)" value="Yes" onclick="checkboxclick()" >
+                                <input type="checkbox" id="chkbox3"  name="Commercial&nbsp;Rent&nbsp;Arrears&nbsp;Recovery&nbsp;(CRAR)" value="Yes" onclick="checkboxclick()" >
                                 <span>Commercial Rent Arrears Recovery (CRAR)</span>  
                                 </div>
                                 <div>
-                                <input type="checkbox" id="chkbox5"  name="Divorce Petition" value="Yes" onclick="checkboxclick()" >
+                                <input type="checkbox" id="chkbox5"  name="Divorce&nbsp;Petition" value="Yes" onclick="checkboxclick()" >
                                 <span>Divorce Petition</span>  
                                 </div>
                                 <div>
-                                <input type="checkbox" id="chkbox6"  name="Court Orders" value="Yes" onclick="checkboxclick()" >
+                                <input type="checkbox" id="chkbox6"  name="Court&nbsp;Orders" value="Yes" onclick="checkboxclick()" >
                                 <span>Court Orders</span>  
                                 </div>
                                 <div>
@@ -155,13 +154,15 @@
                             </label>
                             <textarea name="Messgae" placeholder="Message" required></textarea>
                             <!-- <input type="text" name="Reason of Inquiry" id="values" style="visibility:hidden"> -->
+                             <input type="hidden" name="_captcha" value="false">
                             <input type="hidden" name="_template" value="table">
-                            <input type="hidden" name="_url" value="https://formsubmit.co/rehasurey87@gmail.com">
+                            <input type="hidden" name="_url" value="https://formsubmit.co/harrisonassociatesservices@gmail.com">
                             <!-- <input type="hidden" name="_cc" value="rehasuresh.plsql@gmail.com,jlivingstonmba@yahoo.co.uk"> -->
                             <input type="text" name="_honey" style="display:none">
-                            <!-- <input type="hidden" name="_next" value="https://rehasuresh.github.io/"> -->
+                            <input type="hidden" name="_next" value="https://rehasuresh.github.io/rehajeeva/" >
+                            
                             <div class="center msg-btn">
-                                <button type="submit">SUBMIT MESSAGE</button>
+                                <button type="submit" onclick="submitclick()">SUBMIT MESSAGE</button>
                                 
                             </div>
                             </form> 
@@ -204,7 +205,7 @@
         </div>
     </main>
 </div>
-
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script>
     function showPage(pageId, clickedLink) {
       // Hide all pages
@@ -244,6 +245,15 @@ function checkboxclick() {
   check_values= chval1 +','+chval2+','+chval3+','+chval4+','+chval5+','+chval6;
   document.getElementById("values").value=check_values
   
+}
+
+function submitclick(){
+    swal({
+  title: "Mail Sent Successfully!",
+  text: "We will contact you very very soon!",
+  icon: "success",
+  button: "Home Page!",
+});
 }
   </script>
 </body>

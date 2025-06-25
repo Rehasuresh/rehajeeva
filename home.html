@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trial Project</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+    <nav>
+        <div class="nav-bar">
+            <div class="left-cont">
+            <i class="material-icons">emails</i>
+            <a>harrisonassociatesservices@gmail.com</a><span>|</span></a>
+            <i class='fas fa-phone-alt'></i>
+            <p>9878654327</p>
+            </div>
+            <div class="right-cont">
+                <i class='fab fa-facebook-square'></i>
+                <i class='fab fa-linkedin'></i>
+                <i class='fab fa-twitter-square'></i>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="nav-cont">
+        <div class="logo">
+            <img src="./Image/logo3.jpg" alt="logo">
+             <!-- <link rel="icon" href="E:\London\project base model final\New Project\Image\logo.jpeg"> -->
+            <p class="brand-name">HARRISON & ASSOCIATES</span></p>
+        </div>
+        <ul class="nav-list">
+            <li class="nav-link active" onclick="location.href='home.html'">Home</li>
+            <li class="nav-link" onclick="location.href='service.html'">Services</li>
+            <!-- <li class="nav-link" onclick="showPage('client', this)">Client</li> -->
+            <li class="nav-link" onclick="location.href='contact.html'">Contact</li>
+        </ul>
+    </div>
+    </header>
+    <main>
+        <div class="title">
+            <h2> Welcome to HARRISON & ASSOCIATES</h2>
+            <p>One of the UK’s leading providers of process serving services<br>
+                          available 24 hours a day, 7 days a week, 365 days a year.</p>
+        </div>
+        <div class="body-container">
+          <div class="body-cont displaynone Active" id="home">
+                <div class="body-left">
+                    <img src="./Image/main.jpg" alt="court imgae">
+                    
+                </div>
+                <div class="body-right d-flex-align-center">
+                    <div class="home-cont">                       
+                        <p>we specialize in providing reliable, efficient, and confidential process- serving solutions across
+                            the UK. Our expert team of process servers ensures that legal documents are served with precision, in accordance
+                            with all UK legal guidelines and regulation.</p>
+                    </div>
+                    
+                </div>
+                
+            </div>
+    
+    <br>
+    <br><br>
+    <div class="mycontainer">
+    <div>
+    <P style="text-align: center;color:blue;"><b>WHO WE ARE </b>  </P><br><br>
+    <span style="font-weight: 400;">
+        
+        <br>
+        We provide legal support services and investigations, offering our clients high-quality professional advice and services.
+        <br><br>
+        <br>
+        <br>
+    </span>
+   
+     </div>
+  
+  <div >
+    <P style="text-align: center;color:blue;"><b>WHAT WE DO</b>  </P><br><br>
+    <span style="font-weight: 400;">
+        It is an established provider of intelligence, surveillance, tracing and process serving. Our comprehensive range of services offer proven options and bespoke solutions to suit all needs.
+         We always provide a high level of service and commitment, delivered efficiently and professionally.
+    </span>
+   
+</div>
+  
+  <div>
+     <P style="text-align: center; color:blue;" ><b>WHERE WE WORK </b>  </P><br><br>
+    <span style="font-weight: 400;">
+        <br>
+         Based in London, Harrison Associates operates throughout both the UK.
+        We have the resources and capabilities in most UK jurisdictions; 
+        offering a network of professional agents to manage investigation and 
+        surveillance services reliably, effectively and with complete confidentiality.
+
+    </span>
+   
+  </div>
+</div>
+</div>     
+</main>
+</div>
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script>
+    function showPage(pageId, clickedLink) {
+      // Hide all pages
+      document.querySelectorAll('.displaynone').forEach(displaynone => {
+        displaynone.classList.remove('Active');
+      });
+      // Show the selected page
+      document.getElementById(pageId).classList.add('Active');
+
+      document.querySelectorAll('.nav-link').forEach(link => {
+    link.classList.remove('active');
+  });
+
+  // Add 'active' class to clicked link
+  clickedLink.classList.add('active');
+    }
+
+
+  </script>
+</body>
+</html>

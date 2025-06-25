@@ -70,6 +70,7 @@ header{
 .body-container{
     max-width: 1170px;
     margin: 25px auto 0 auto;
+    overflow:auto;
 }
 .d-flex-align-center{
     display: flex;
@@ -148,7 +149,7 @@ main{
    
 }   
 .body-container .body-left img{
-    height: 400px;
+    height: 300px;
     width: 100%;
     
 } 
@@ -233,7 +234,7 @@ input:focus, textarea:focus {
 }
 .w-40{
     height: 400px;
-    width: 30%;
+    width: 50%;
 }
 #client .client-cont .cont-box{
     width: 320px;
@@ -291,3 +292,82 @@ input:focus, textarea:focus {
   padding: 20px;
   text-align: center;
 } 
+div.empty{
+    width: 20%;
+     overflow:auto;
+}
+div.mycontainer {
+ display: flex;
+      justify-content: space-around;
+      padding: 50px 20px;
+      flex-wrap: wrap;
+}
+div.mycontainer div {
+      background-color: #ffffff;
+      border-radius: 15px;
+      padding: 30px;
+      width: 300px;
+      /* box-shadow: 0 0 15px rgba(0,0,0,0.3); */
+      box-shadow:    inset 0 -1em 3em #000099,
+    0 0 0 1px #000099,
+    0.3em 0.3em 1em #133d66;
+      text-align: center;
+}
+
+.sectioncontainer {
+      display: flex;
+      justify-content: space-around;
+      padding: 50px 20px;
+      flex-wrap: wrap;
+    }
+.section {
+      background-color: #3541eb;
+      border-radius: 15px;
+      padding: 30px;
+      width: 300px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+      text-align: center;
+    }
+
+    .section img {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 15px;
+    }
+
+    .section h2 {
+      font-size: 22px;
+      margin-bottom: 20px;
+      color:#f5de15;
+    }
+
+    .section ul {
+      list-style: none;
+      padding: 0;
+      text-align: left;
+      color: #fff;
+    }
+
+    .section ul li {
+      padding: 6px 0;
+    }
+
+    .section ul li::before {
+      content: "→";
+      margin-right: 8px;
+      color: #ccc;
+    }
+
+    .section ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .section ul li a:hover {
+      text-decoration: underline;
+    }
+ .middle-image {
+      width: 500px;
+      height: 500px;
+      margin-top: 30px;
+    }

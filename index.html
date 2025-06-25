@@ -30,15 +30,15 @@
     <header>
         <div class="nav-cont">
         <div class="logo">
-            <img src="./Image/logo3.JPG" alt="logo">
+            <img src="./Image/logo3.jpg" alt="logo">
              <!-- <link rel="icon" href="E:\London\project base model final\New Project\Image\logo.jpeg"> -->
             <p class="brand-name">HARRISON & ASSOCIATES</span></p>
         </div>
         <ul class="nav-list">
-            <li class="nav-link active" onclick="showPage('home', this)">Home</li>
-            <li class="nav-link" onclick="showPage('service', this)">Services</li>
-            <li class="nav-link" onclick="showPage('client', this)">Client</li>
-            <li class="nav-link" onclick="showPage('contact', this)">Contact</li>
+            <li class="nav-link active" onclick="location.href='home.html'">Home</li>
+            <li class="nav-link" onclick="location.href='service.html'">Services</li>
+            <!-- <li class="nav-link" onclick="showPage('client', this)">Client</li> -->
+            <li class="nav-link" onclick="location.href='contact.html'">Contact</li>
         </ul>
     </div>
     </header>
@@ -49,14 +49,13 @@
                           available 24 hours a day, 7 days a week, 365 days a year.</p>
         </div>
         <div class="body-container">
-            <div class="body-cont displaynone Active" id="home">
+          <div class="body-cont displaynone Active" id="home">
                 <div class="body-left">
                     <img src="./Image/main.jpg" alt="court imgae">
                     
                 </div>
                 <div class="body-right d-flex-align-center">
-                    <div class="home-cont">
-                       
+                    <div class="home-cont">                       
                         <p>we specialize in providing reliable, efficient, and confidential process- serving solutions across
                             the UK. Our expert team of process servers ensures that legal documents are served with precision, in accordance
                             with all UK legal guidelines and regulation.</p>
@@ -65,146 +64,49 @@
                 </div>
                 
             </div>
-
-            <div class="body-cont displaynone" id="service">
-                <div class="body-left">
-                    <img src="./Image/servi.jpg" alt="court imgae">
-                </div>
-                <div class="body-right d-flex-align-center">
-                    <div class="home-cont">
-                        <div class="services">
-                            <h3 class="fs-30">Services</h3>
-                            <ul>
-                                <li>Experienced & Professional team</li>
-                                <li>Comprehensive process serving Solutions</li>
-                                <li>Rapid and reliable delivery</li>
-                                <li>Nationwide coverage</li>
-                                <li>Discreet and confidential service</li>
-                                <li>Competitive pricing</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                </div>
-                
-            </div>
-            <div class="body-cont displaynone" id="contact">
-                <div class="body-left w-40">
-                    <img src="./Image/client.jpg" class="height" alt="court imgae">
-                </div>
-                <div class="body-right d-flex-align-center">
-                    <div class="home-cont">
-                        <div class="contact">
-                            <h3>Use the form below to tell us about your legal inquiry, and we'll call you back to schedule an appointment.</h3>
-
-                            <form  target="_self" action="https://formsubmit.co/harrisonassociatesservices@gmail.com" method="POST" >
-                                <!-- <form  target="_self" action="https://formsubmit.co/rehasurey87@gmail.com" method="POST" > -->
-                                <label class="d-block pb-10"></label>
-                                <div class="form-flex">
-                                    
-                                    <div class="form-cont">
-                                            <label for="fname" class="d-block fs-14">First Name(*)</label>
-                                            <input type="text" id="fname" name="First&nbsp;Name" placeholder="Full Name" required>
-                                            </div>
-                                            <div class="form-cont">
-                                            <label for="email" class="d-block fs-14">Last Name(*)</label>
-                                            <input type="text" id="lname" name="Last&nbsp;Name" placeholder="Last Name" required>
-                                            </div>
-                                </div>
-                            <label for="email" class="d-block">Email Address (required)(*)</label>
-                            <input type="email" id="email" name="Email" placeholder="Email" required>
-                            <label for="mobile" class="d-block">Phone Number(*)</label>
-                            <input type="mobile" id="mobile" name="Mobile" placeholder="Phone Number" required>
-                            <!-- <label for="subject" class="d-block">SUBJECT</label>
-                            <input type="text" name="subject" placeholder="Subject" value=""> -->
-
-                           <label for="subject" class="d-block pb-10">Reason of Inquiry(anyone)</label>
-                          
-                           <div class="check-box">
-                                <div>
-                                <input type="checkbox" id="chkbox1"  name="Process&nbsp;Serving" value="Yes" onclick="checkboxclick()"> 
-                                <span>Process Serving</span>  
-                                </div>
-                                <div>
-                                <input type="checkbox" id="chkbox2" name="Commercial&nbsp;Forfeiture" value="Yes"  onclick="checkboxclick()">
-                                <span>Commercial Forfeiture</span>  
-                                </div>
-                                <div>
-                                <input type="checkbox" id="chkbox3"  name="Commercial&nbsp;Rent&nbsp;Arrears&nbsp;Recovery&nbsp;(CRAR)" value="Yes" onclick="checkboxclick()" >
-                                <span>Commercial Rent Arrears Recovery (CRAR)</span>  
-                                </div>
-                                <div>
-                                <input type="checkbox" id="chkbox5"  name="Divorce&nbsp;Petition" value="Yes" onclick="checkboxclick()" >
-                                <span>Divorce Petition</span>  
-                                </div>
-                                <div>
-                                <input type="checkbox" id="chkbox6"  name="Court&nbsp;Orders" value="Yes" onclick="checkboxclick()" >
-                                <span>Court Orders</span>  
-                                </div>
-                                <div>
-                                <input type="checkbox" id="chkbox4" name="Other" value="Yes" onclick="checkboxclick()">
-                                <span class="">Other</span>
-                                </div>
-                              
-                            </div>
-                             <h3 for="message" class="d-block">How Can We Help ?</h3>
-                            <label for="message" class="mb-5 d-block pb-10">Please do not include confidential or sensitive in your message. 
-                                In the event that we are representing a party with opposing interests to your own,
-                                we may have duty to disclose any information you provide to our client.
-                            </label>
-                            <textarea name="Messgae" placeholder="Message" required></textarea>
-                            <!-- <input type="text" name="Reason of Inquiry" id="values" style="visibility:hidden"> -->
-                             <input type="hidden" name="_captcha" value="false">
-                            <input type="hidden" name="_template" value="table">
-                            <input type="hidden" name="_url" value="https://formsubmit.co/harrisonassociatesservices@gmail.com">
-                            <!-- <input type="hidden" name="_cc" value="rehasuresh.plsql@gmail.com,jlivingstonmba@yahoo.co.uk"> -->
-                            <input type="text" name="_honey" style="display:none">
-                            <input type="hidden" name="_next" value="https://rehasuresh.github.io/rehajeeva/" >
-                            
-                            <div class="center msg-btn">
-                                <button type="submit" onclick="submitclick()">SUBMIT MESSAGE</button>
-                                
-                            </div>
-                            </form> 
-
-                        </div>
-                    </div>
-                    
-                </div>
-                
-            </div>
-
-             <div class="body-cont displaynone" id="client">
-                <div class="">
-                    <!-- <img src="./Image/main.jpg" alt="court imgae"> -->
-                    <div class="client-cont">
-                        <div class="cont-box">
-                            <div class="cl-head">
-                                <h3>Local Authority</h3>
-                            </div>
-                            <p>Local authority law governs the powers and responsibilities of local governments, including zoning, building regulations, and land use</p>
-                        </div>
-                        <div class="cont-box">
-                            <div class="cl-head">
-                                <h3>Law Firms</h3>
-                            </div>
-                            <p>Law firms play a key role in advising both local authorities and property owners, helping navigate disputes, compliance issues, and property transactions. Understanding the legal framework is essential for all parties to ensure responsible development and protection of property rights.</p>
-                        </div>
-                        <div class="cont-box">
-                            <div class="cl-head">
-                                <h3>Property Owner</h3>
-                            </div>
-                            <p>These laws directly affect property owners, who must comply with planning permissions, maintenance standards, and environmental regulations.</p>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-
-
-        </div>
-    </main>
+    
+    <br>
+    <br><br>
+    <div class="mycontainer">
+    <div>
+    <P style="text-align: center;color:blue;"><b>WHO WE ARE </b>  </P><br><br>
+    <span style="font-weight: 400;">
+        
+        <br>
+        We provide legal support services and investigations, offering our clients high-quality professional advice and services.
+        <br><br>
+        <br>
+        <br>
+    </span>
+   
+     </div>
+  
+  <div >
+    <P style="text-align: center;color:blue;"><b>WHAT WE DO</b>  </P><br><br>
+    <span style="font-weight: 400;">
+        It is an established provider of intelligence, surveillance, tracing and process serving. Our comprehensive range of services offer proven options and bespoke solutions to suit all needs.
+         We always provide a high level of service and commitment, delivered efficiently and professionally.
+    </span>
+   
 </div>
+  
+  <div>
+     <P style="text-align: center; color:blue;" ><b>WHERE WE WORK </b>  </P><br><br>
+    <span style="font-weight: 400;">
+        <br>
+         Based in London, Harrison Associates operates throughout both the UK.
+        We have the resources and capabilities in most UK jurisdictions; 
+        offering a network of professional agents to manage investigation and 
+        surveillance services reliably, effectively and with complete confidentiality.
+
+    </span>
+   
+  </div>
+</div>
+</div>     
+</main>
+</div>
+
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script>
     function showPage(pageId, clickedLink) {
@@ -223,38 +125,7 @@
   clickedLink.classList.add('active');
     }
 
-var check_values;
-function checkboxclick() {
-    debugger;
-  var checkBox1 = document.getElementById("chkbox1");
-  var checkBox2 = document.getElementById("chkbox2");
-  var checkBox3 = document.getElementById("chkbox3");
-  var checkBox4 = document.getElementById("chkbox4");
-  var checkBox4 = document.getElementById("chkbox5");
-  var checkBox4 = document.getElementById("chkbox6");
-  
-  var chval1,chval2,chval3,chval4,chval5,chval6;
-  
 
-  chval1=(checkBox1.checked==true?document.getElementById("chkbox1").value:'') 
-  chval2=(checkBox2.checked==true?document.getElementById("chkbox2").value:'')
-  chval3=(checkBox3.checked==true?document.getElementById("chkbox3").value:'')
-  chval4=(checkBox4.checked==true?document.getElementById("chkbox4").value:'')
-  chval5=(checkBox4.checked==true?document.getElementById("chkbox5").value:'')
-  chval6=(checkBox4.checked==true?document.getElementById("chkbox6").value:'')
-  check_values= chval1 +','+chval2+','+chval3+','+chval4+','+chval5+','+chval6;
-  document.getElementById("values").value=check_values
-  
-}
-
-function submitclick(){
-    swal({
-  title: "Mail Sent Successfully!",
-  text: "We will contact you very very soon!",
-  icon: "success",
-  button: "Home Page!",
-});
-}
   </script>
 </body>
 </html>
